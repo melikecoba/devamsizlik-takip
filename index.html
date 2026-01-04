@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kampüs Asistanı</title>
+    <title>KAÇTIM HOCAM</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -21,13 +21,18 @@
         .nav-link { color: #555; border-radius: 20px; padding: 8px 20px; margin: 0 5px; }
         .system-inputs input { text-align: center; font-weight: bold; }
         .system-inputs label { font-size: 0.75rem; color: #6c757d; display: block; text-align: center; margin-top: 3px;}
+        .app-logo { width: 80px; height: auto; margin-bottom: 10px; }
     </style>
 </head>
 <body class="p-3">
 
     <div id="auth-screen" class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="card p-4 col-md-5 bg-white shadow">
-            <h3 class="text-center text-primary mb-4"><i class="fa-solid fa-graduation-cap"></i> Kampüs Asistanı</h3>
+            <div class="text-center mb-4">
+    <img src="https://osaczjczqmgcelhopdnj.supabase.co/storage/v1/object/public/avatars/KACTIM.png" class="app-logo"> 
+    <h3 class="fw-bold text-primary" style="font-family: 'Arial Black', sans-serif;">KAÇTIM HOCAM</h3>
+    <p class="text-muted small">Firari tespit edildi! 🏃‍♂️💨</p>
+</div>
             
             <div id="login-form">
                 <input type="email" id="l-email" class="form-control mb-2 p-3" placeholder="Email Adresi">
@@ -37,7 +42,11 @@
             </div>
 
             <div id="register-form" class="hidden">
-                <h6 class="text-muted mb-3">Kişisel Bilgiler</h6>
+                <div class="card p-3 sticky-top" style="top: 20px;">
+    <div class="text-center mb-3 border-bottom pb-3">
+         <img src="https://osaczjczqmgcelhopdnj.supabase.co/storage/v1/object/public/avatars/KACTIM.png" style="width: 50px;">
+         <h6 class="fw-bold mt-2 text-primary">KAÇTIM HOCAM</h6>
+    </div>
                 <div class="row g-2 mb-2">
                     <div class="col-6">
                         <input type="text" id="r-fullname" class="form-control" placeholder="Ad Soyad">

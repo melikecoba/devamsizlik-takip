@@ -108,8 +108,8 @@
 
             <div class="col-md-6">
                 <ul class="nav nav-pills mb-4 justify-content-center bg-white p-2 rounded shadow-sm">
-                    <li class="nav-item"><a class="nav-link active" href="#" onclick="tabDegis('lessons')" id="tab-lessons">📚 Dersler</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="tabDegis('social')" id="tab-social">🌍 Akış</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" onclick="tabDegis('lessons')" id="tab-lessons">Dersler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="tabDegis('social')" id="tab-social">Akış</a></li>
                 </ul>
 
                 <div id="view-lessons">
@@ -136,7 +136,7 @@
             </div>
 
             <div class="col-md-3">
-                <div class="card p-3">
+                <div class="card p-3 sticky-top" style="top: 20px;">
                     <h6 class="fw-bold mb-3 text-secondary">Takip Ettiğin Firariler</h6>
                     <div id="friends-list" class="list-group list-group-flush small">Yükleniyor...</div>
                 </div>
@@ -172,7 +172,7 @@
             <div class="modal-content">
                 <div class="modal-body text-center p-4">
                     <div class="mb-3"><i class="fa-solid fa-camera fa-3x text-primary"></i></div>
-                    <h5 class="mb-3 fw-bold">Kanıt Ekleme 📸</h5>
+                    <h5 class="mb-3 fw-bold">Kanıt Ekleme</h5>
                     <p class="text-muted mb-4">Neden devamsızlık yaptığınla ilgili resim eklemek ister misin?</p>
                     <div class="d-flex gap-2 justify-content-center">
                         <button onclick="kanitCevap('evet')" class="btn btn-primary px-4">Evet</button>
@@ -363,8 +363,7 @@
                     
                     const color = rem <= 1 ? 'bg-danger' : (rem <= 2 ? 'bg-warning' : 'bg-success');
                     
-                    // DÜZELTME 2: 100'den büyükse rem değişkenini "∞" sembolüne çevir
-                    // (Sadece görüntüde değişir, arkadaki matematiği bozmaz)
+                    // DÜZELTME 2: 20'den büyükse rem değişkenini "∞" sembolüne çevir
                     if (l.max_limit >= 20) {
                         rem = "∞";
                     }
@@ -374,7 +373,7 @@
                         const val = l.target_grade;
                         if (val > 100) sonucHtml = `<div class="mt-2 text-center small fw-bold border-top pt-2 text-danger"><i class="fa-solid fa-circle-xmark"></i> ${val} alman lazım, kaldın.</div>`;
                         else if (val < 0) sonucHtml = `<div class="mt-2 text-center small fw-bold border-top pt-2 text-success"><i class="fa-solid fa-check-circle"></i> Zaten geçiyorsun!</div>`;
-                        else sonucHtml = `<div class="mt-2 text-center small fw-bold border-top pt-2 text-primary">🎯 Finalden EN AZ <span class="fs-6">${val}</span> alman gerek.</div>`;
+                        else sonucHtml = `<div class="mt-2 text-center small fw-bold border-top pt-2 text-primary">Finalden EN AZ <span class="fs-6">${val}</span> alman gerek.</div>`;
                     }
 
                     div.innerHTML += `
@@ -384,12 +383,12 @@
                             <h5 class="fw-bold">${l.name}</h5>
                             <div class="progress my-2" style="height:6px;"><div class="progress-bar ${color}" style="width: ${(count/l.max_limit)*100}%"></div></div>
                             <div class="d-flex gap-1 mt-auto">
-                                <button onclick="islemBaslat(${l.id}, true)" class="btn btn-sm btn-outline-danger w-100">🚫 Yok</button>
-                                <button onclick="islemBaslat(${l.id}, false)" class="btn btn-sm btn-outline-info w-100">📸 Story</button>
+                                <button onclick="islemBaslat(${l.id}, true)" class="btn btn-sm btn-outline-danger w-100">🚫 Firar</button>
+                                <button onclick="islemBaslat(${l.id}, false)" class="btn btn-sm btn-outline-info w-100">Dersten Hikaye Ekle</button>
                             </div>
                             <div class="d-flex gap-1 mt-2">
-                                <button onclick="notHesapla(${l.id})" class="btn btn-sm btn-dark w-100">🧮 Hesapla</button>
-                                <button onclick="gecmisiGor(${l.id})" class="btn btn-sm btn-light border w-100">Geçmiş</button>
+                                <button onclick="notHesapla(${l.id})" class="btn btn-sm btn-dark w-100">Final Notu Hesapla</button>
+                                <button onclick="gecmisiGor(${l.id})" class="btn btn-sm btn-light border w-100">Devamsızlık Geçmişi</button>
                                 <button onclick="dersSil(${l.id})" class="btn btn-sm text-danger"><i class="fa-solid fa-trash"></i></button>
                             </div>
                             ${sonucHtml}

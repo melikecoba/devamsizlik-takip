@@ -207,7 +207,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="notifModal" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Bildirimler 🔔</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body" id="notif-content"></div><div class="modal-footer"><button onclick="bildirimleriTemizle()" class="btn btn-sm btn-outline-danger">Temizle</button></div></div></div></div>
+    <div class="modal fade" id="notifModal" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Bildirimler</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body" id="notif-content"></div><div class="modal-footer"><button onclick="bildirimleriTemizle()" class="btn btn-sm btn-outline-danger">Temizle</button></div></div></div></div>
     <div class="modal fade" id="historyModal" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Geçmiş</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body" id="history-content"></div></div></div></div>
     
     <input type="file" id="photo-input" class="hidden" accept="image/*">
@@ -246,8 +246,7 @@
             
             if(!email || !password || !data.username) return alert("Eksik bilgi!");
 
-            // GITHUB LINKINI KONTROL ET
-            const redirectLink = 'https://melikecoba.github.io/devamsizlik-takip/success.html'; 
+            const redirectLink = 'https://melikecoba.github.io/devamsizlik-takip/succsess.html'; 
 
             const { error } = await sb.auth.signUp({ 
                 email, 

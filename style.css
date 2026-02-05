@@ -16,4 +16,40 @@
         /* Ana sayfadaki küçük logo */
         .sidebar-logo { width: 150px; height: auto; margin-bottom: 0px; }
         .feed-img { width: 100%; height: auto; border-radius: 8px; margin-top: 10px; }
-   
+/* Varsayılan olarak (Bilgisayarda) Alt Menüyü Gizle */
+.mobile-bottom-nav {
+    display: none !important;
+}
+
+/* Varsayılan olarak (Bilgisayarda) Üst Menüyü Göster */
+.desktop-top-nav {
+    display: flex !important;
+}
+
+/* --- MOBİL CİHAZLAR İÇİN ÖZEL KURALLAR (max-width: 768px) --- */
+@media only screen and (max-width: 768px) {
+    
+    /* 1. Mobilde Alt Menüyü Göster */
+    .mobile-bottom-nav {
+        display: flex !important;
+    }
+
+    /* 2. Mobilde Bilgisayar Menüsünü Gizle */
+    .desktop-top-nav {
+        display: none !important;
+    }
+
+    /* 3. Mobilde Sol Taraftaki Profil ve Sağdaki Arkadaş Listesini Gizleyebiliriz */
+    /* (İstersen bu kısmı yorum satırı yapabilirsin ama app hissi için gizlemek iyidir) */
+    .col-md-3 {
+        display: none; /* Mobilde yan menüleri kapatır, sadece orta kısım kalır */
+    }
+    
+    /* 4. Mobilde Profil Modalını açmak için bir yer lazım */
+    /* Giriş ekranındaki logoyu veya üstte bir profil ikonunu aktif etmemiz gerekebilir */
+    
+    /* 5. Mobilde padding ayarı (Alt menü kapatmasın diye) */
+    body {
+        padding-bottom: 90px;
+    }
+}

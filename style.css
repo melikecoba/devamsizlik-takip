@@ -1,0 +1,19 @@
+
+        body { background-color: #f0f2f5; font-family: 'Segoe UI', sans-serif; }
+        .card { border: none; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .hidden { display: none !important; }
+        .avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; }
+        .avatar-lg { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; }
+        .user-click { cursor: pointer; padding: 5px; border-radius: 8px; transition: 0.2s; }
+        .user-click:hover { background-color: #e9ecef; }
+        .story-mode { border-left: 4px solid #0dcaf0 !important; }
+        .nav-link.active { background-color: #0d6efd !important; color: white !important; border-radius: 20px; }
+        .nav-link { color: #555; border-radius: 20px; padding: 8px 20px; margin: 0 5px; }
+        .system-inputs input { text-align: center; font-weight: bold; }
+        .system-inputs label { font-size: 0.75rem; color: #6c757d; display: block; text-align: center; margin-top: 3px;}
+        /* Giriş ekranındaki büyük logo */
+        .app-logo { width: 200px; height: auto; margin-bottom: 10px; }
+        /* Ana sayfadaki küçük logo */
+        .sidebar-logo { width: 150px; height: auto; margin-bottom: 0px; }
+        .feed-img { width: 100%; height: auto; border-radius: 8px; margin-top: 10px; }
+   

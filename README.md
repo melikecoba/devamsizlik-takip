@@ -4,7 +4,6 @@
 
 **KAÇTIM HOCAM**, üniversite öğrencilerinin korkulu rüyası olan devamsızlık takibini eğlenceli ve sosyal bir hale getiren web tabanlı bir uygulamadır. Sadece devamsızlık saymakla kalmaz, arkadaşlarınızla sosyalleşmenizi sağlar ve ders geçme hedeflerinizi hesaplar.
 
-*(Not: Buraya uygulamanın ekran görüntüsünü eklersen çok havalı durur!)*
 
 ## 🌟 Özellikler
 
@@ -66,17 +65,7 @@ Proje ilişkisel veritabanı yapısı üzerine kurulmuştur:
 * `likes` & `comments`: Sosyal etkileşimler.
 * `notifications`: Bildirim sistemi.
 
-## 🚀 Kurulum (Kendi Bilgisayarınızda Çalıştırmak İçin)
 
-1. Bu projeyi klonlayın:
-```bash
-git clone https://github.com/kullaniciadi/KactimHocam.git
-
-```
-
-
-2. `index.html` dosyasını bir tarayıcıda açın.
-3. **Not:** Proje şu anda canlı bir Supabase veritabanına bağlıdır. Kendi veritabanınızı kullanmak isterseniz `script.js` dosyasındaki `SUPABASE_URL` ve `SUPABASE_KEY` alanlarını kendi proje bilgilerinizle değiştirmeniz gerekir.
 
 ## 📸 Ekran Görüntüleri
 
@@ -86,7 +75,7 @@ git clone https://github.com/kullaniciadi/KactimHocam.git
 
 ## 🔗 Canlı Demo
 
-Projeyi canlı incelemek için: [Buraya Tıklayın](https://www.google.com/search?q=https://melikecoba.github.io/devamsizlik-takip/)
+Projeyi canlı incelemek için: [Buraya Tıklayın]([https://www.google.com/search?q=https://melikecoba.github.io/devamsizlik-takip/](https://melikecoba.github.io/devamsizlik-takip/))
 
 ---
 

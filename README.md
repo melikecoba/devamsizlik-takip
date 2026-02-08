@@ -75,10 +75,8 @@ Proje ilişkisel veritabanı yapısı üzerine kurulmuştur:
 
 ## 🔗 Canlı Demo
 
-Projeyi canlı incelemek için: [https://www.google.com/search?q=https://melikecoba.github.io/devamsizlik-takip/](https://melikecoba.github.io/devamsizlik-takip/)
+Projeyi canlı incelemek için: [Buraya Tıklayın](https://melikecoba.github.io/devamsizlik-takip/)
 
 ---
 
 *Bu proje, üniversite hayatını biraz daha eğlenceli hale getirmek için geliştirilmiştir.* 🎓✨
-
-Projeyi canlı incelemek için: [Buraya Tıklayın](https://melikecoba.github.io/devamsizlik-takip/)
